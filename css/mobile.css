@@ -1,0 +1,77 @@
+/* mobile version */
+@media  screen and (max-width: 425px){
+    section {
+      height: auto;
+      padding: 80px 8% 40px 8%;
+    }
+    .home{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .home-content h1 {
+      font-size: 40px;
+  }
+  .about{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-img img{
+    width: 100%;
+  }
+  .about-content {
+    padding-right: 0px;
+}
+  .myAllservice{
+    flex-direction: column;
+  }
+  .portfolio-container{
+    grid-template-columns: 1fr;
+  }
+  
+  .contact form .input-box {
+    flex-direction: column;
+  }
+  .contact form .input-box input {
+    width: 100%;
+  }
+  .footer{
+    flex-wrap: nowrap;
+  }
+  .footer-text p{
+    font-size: 14px;
+  }
+}
+
+  /* mobile version */
+
+  @media screen and  (max-width: 768px) {
+
+
+    #menu-icon {
+       display: block;
+    }
+    .navbar {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      padding: 0 3% 2rem 3%;
+      background: var(--bg-color);
+      border-top: .1rem solid Orgba(0, 0, 0,.2);
+      box-shadow: 0.5rem 1rem Orgba(0, 0, 0,.2);
+      display: flex;
+      flex-direction: column;
+      font-size: 1rem;
+      z-index: -10;
+      display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        padding-top: 20px;
+    }
+    
+  }
