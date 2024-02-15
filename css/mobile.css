@@ -1,16 +1,22 @@
 /* mobile version */
 @media  screen and (max-width: 425px){
+  .logo{
+    font-size: 2rem;
+  }
     section {
       height: auto;
       padding: 80px 8% 40px 8%;
     }
     .home{
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 30px;
     }
     .home-content h1 {
-      font-size: 40px;
+      font-size: 33px;
   }
+  .home-content h3 {
+    font-size: 20px; 
+   }
   .about{
     flex-direction: column;
     align-items: center;
@@ -28,7 +34,12 @@
   .portfolio-container{
     grid-template-columns: 1fr;
   }
-  
+  .services-box h3 {
+    font-size: 20px;
+  }  
+  .services-container .services-box {
+    padding: 23px 15px 28px 15px;
+  }
   .contact form .input-box {
     flex-direction: column;
   }
