@@ -4,9 +4,9 @@ let navBar = document.getElementById('navbar');
 
 menuIcon.onclick = ()=>{
     menuIcon.classList.toggle('bx-x')
-    navBar.classList.toggle('active')
-   
+    navBar.classList.toggle('active') 
 }
+
 
 
 /*==================== scroll sections active link ====================*/
@@ -27,6 +27,11 @@ window.onscroll = () => {
       document.querySelector('header nav a[href*=' + id + ']').classList.add('active');
     }
   });
+
+  /*==================== hide the navber and and x incon when i scroll the website ====================*/
+  
+  menuIcon.classList.remove('bx-x')
+  navBar.classList.remove('active') 
 }
 
 /*==================== scroll reveal ====================*/
