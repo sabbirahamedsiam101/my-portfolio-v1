@@ -1,18 +1,79 @@
-/* mobile version */
+
+  /* for tablet version */
+  @media  screen and (max-width: 768px){
+    #menu-icon {
+      display: block;
+   }
+   .navbar {
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     padding: 0 3% 2rem 3%;
+     background: var(--bg-color);
+     border-top: .1rem solid Orgba(0, 0, 0,.2);
+     box-shadow: 0.5rem 1rem Orgba(0, 0, 0,.2);
+     display: flex;
+     flex-direction: column;
+     font-size: 1rem;
+     z-index: -10;
+     display: none;
+   }
+   .navbar.active{
+       display: block;
+   }
+   .navbar a{
+       display: block;
+       padding-top: 20px;
+   }
+    .header{
+      width: 100%;
+    }
+    .logo {
+      font-size: 2rem;
+   }
+    .home-content h1 {
+      font-size: 50px ;
+    }
+    section {
+      padding: 90px 8% 40px 8%;
+    }
+    /* about  */
+    .about-content {
+      padding-right: 0px; 
+    }
+    .about {
+      padding: 60px 6% 50px 3%;
+   }
+   /* service */
+   .myAllservice {
+    flex-wrap: wrap;
+   }
+   /* project */
+   .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
+   }
+  }
+
+
+  /* mobile version */
 @media  screen and (max-width: 425px){
   .logo{
     font-size: 2rem;
   }
-    section {
-      height: auto;
-      padding: 80px 8% 40px 8%;
-    }
-    .home{
-        flex-direction: column-reverse;
-        gap: 30px;
-    }
-    .home-content h1 {
-      font-size: 33px;
+  section {
+    height: auto;
+    padding: 90px 8% 40px 8%;
+  }
+  .header{
+    width: 90%;
+  }
+  .home{
+    flex-direction: column-reverse;
+    gap: 0px;
+  }
+  .home-content h1 {
+    font-size: 33px;
   }
   .home-content h3 {
     font-size: 20px; 
@@ -27,10 +88,13 @@
   }
   .about-content {
     padding-right: 0px;
-}
+  }
   .myAllservice{
     flex-direction: column;
   }
+  .heading {
+    font-size: 30px;
+   }
   .portfolio-container{
     grid-template-columns: 1fr;
   }
@@ -56,33 +120,3 @@
 
   /* mobile version */
 
-  @media screen and  (max-width: 768px) {
-
-
-    #menu-icon {
-       display: block;
-    }
-    .navbar {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      padding: 0 3% 2rem 3%;
-      background: var(--bg-color);
-      border-top: .1rem solid Orgba(0, 0, 0,.2);
-      box-shadow: 0.5rem 1rem Orgba(0, 0, 0,.2);
-      display: flex;
-      flex-direction: column;
-      font-size: 1rem;
-      z-index: -10;
-      display: none;
-    }
-    .navbar.active{
-        display: block;
-    }
-    .navbar a{
-        display: block;
-        padding-top: 20px;
-    }
-    
-  }
