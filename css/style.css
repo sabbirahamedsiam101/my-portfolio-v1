@@ -68,8 +68,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 40px;
   }
   
+  .home-content{
+    max-width: 60%;
+  }
   .home-content h3 {
     justify-content: center;
     align-items: center;
@@ -112,7 +116,7 @@
     padding: 10px 22px;
     background: var(--main-color);
     border-radius: 4rem;
-    box-shadow: 0 0 1rem var(--main-color);
+    box-shadow: 0 0 14px var(--main-color);
     font-size: 16px;
     color: var(--second-bg-color);
     letter-spacing: .1rem;
